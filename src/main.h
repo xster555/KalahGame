@@ -6,6 +6,11 @@
 #define TFT_WIDTH 170
 #define TFT_HEIGHT 320
 
+#define PIT_WIDTH 38
+#define PIT_HEIGHT 38
+#define STORE_WIDTH 38
+#define STORE_HEIGHT 86
+
 #define UP_BUTTON 0
 #define DOWN_BUTTON 14
 

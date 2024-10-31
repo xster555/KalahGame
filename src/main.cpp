@@ -47,11 +47,11 @@ void createGameSprite()
   {
     if (i != 6)
     {
-      p1BlkSprs[i]->createSprite(38, 38);
+      p1BlkSprs[i]->createSprite(PIT_WIDTH, PIT_HEIGHT);
     }
     else
     {
-      p1BlkSprs[i]->createSprite(38, 86);
+      p1BlkSprs[i]->createSprite(STORE_WIDTH, STORE_HEIGHT);
     }
   }
 
@@ -62,11 +62,11 @@ void createGameSprite()
   {
     if (i != 13)
     {
-      p2BlkSprs[i - 7]->createSprite(38, 38);
+      p2BlkSprs[i - 7]->createSprite(PIT_WIDTH, PIT_HEIGHT);
     }
     else
     {
-      p2BlkSprs[i - 7]->createSprite(38, 86);
+      p2BlkSprs[i - 7]->createSprite(STORE_WIDTH, STORE_HEIGHT);
     }
   }
 
@@ -96,7 +96,7 @@ void updateGameBoard()
         p1BlkSprs[i]->setTextColor(TFT_BLACK);
       }
       p1BlkSprs[i]->drawString(String(blockSeed[i]), 19, 19, 2);
-      p1BlkSprs[i]->pushToSprite(&p1GameBoard_spr, 40 * (i + 1), p1GameBoard_spr.height() - p1Blk0_spr.height());
+      p1BlkSprs[i]->pushToSprite(&p1GameBoard_spr, 40 * (i + 1), p1GameBoard_spr.height() - PIT_HEIGHT);
     }
     else
     {
@@ -129,7 +129,7 @@ void updateGameBoard()
         p2BlkSprs[i - 7]->setTextColor(TFT_BLACK);
       }
       p2BlkSprs[i - 7]->drawString(String(blockSeed[i]), 19, 19, 2);
-      p2BlkSprs[i - 7]->pushToSprite(&p2GameBoard_spr, 40 * (i - 6), p2GameBoard_spr.height() - p1Blk0_spr.height());
+      p2BlkSprs[i - 7]->pushToSprite(&p2GameBoard_spr, 40 * (i - 6), p2GameBoard_spr.height() - PIT_HEIGHT);
     }
     else
     {
