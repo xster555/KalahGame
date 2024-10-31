@@ -194,41 +194,6 @@ void updateGameBoard(int pos)
     p2GameBoard_spr.setPivot(p2GameBoard_spr.width() / 2, 0);
     p2GameBoard_spr.pushRotated(180);
   }
-
-  // // P2
-  // p2GameBoard_spr.fillSprite(TFT_BLACK);
-
-  // for (int i = 7; i < 14; i++)
-  // {
-  //   if (i != 13)
-  //   {
-  //     p2BlkSprs[i - 7]->setTextDatum(MC_DATUM);
-  //     if (!isPlayer1 && currPos == (i - 7))
-  //     {
-  //       p2BlkSprs[i - 7]->fillSprite(TFT_DARKGREEN);
-  //       p2BlkSprs[i - 7]->setTextColor(TFT_WHITE);
-  //     }
-  //     else
-  //     {
-  //       p2BlkSprs[i - 7]->fillSprite(TFT_WHITE);
-  //       p2BlkSprs[i - 7]->setTextColor(TFT_BLACK);
-  //     }
-  //     p2BlkSprs[i - 7]->drawString(String(blockSeed[i]), 19, 19, 2);
-  //     p2BlkSprs[i - 7]->pushToSprite(&p2GameBoard_spr, 40 * (i - 6), p2GameBoard_spr.height() - p1Blk0_spr.height());
-  //   }
-  //   else
-  //   {
-  //     p2BlkSprs[i - 7]->fillSprite(TFT_WHITE);
-  //     p2BlkSprs[i - 7]->setTextDatum(MC_DATUM);
-  //     p2BlkSprs[i - 7]->setTextColor(TFT_BLACK);
-  //     p2BlkSprs[i - 7]->drawString(String(blockSeed[i]), 19, 43, 2);
-  //     p2BlkSprs[i - 7]->pushToSprite(&p2GameBoard_spr, 40 * (i - 6), 0);
-  //   }
-  // }
-
-  // tft.setPivot(TFT_WIDTH / 2 + 74, 84);
-  // p2GameBoard_spr.setPivot(p2GameBoard_spr.width() / 2, 0);
-  // p2GameBoard_spr.pushRotated(180);
 }
 
 // 进入游戏

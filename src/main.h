@@ -60,5 +60,4 @@ void drawWinScreen();
 void upClick();
 void downClick();
 void confirmPlay();
-
 /***** 游戏相关（end） *****/
